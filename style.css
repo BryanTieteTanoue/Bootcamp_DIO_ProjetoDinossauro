@@ -1,9 +1,14 @@
+body {
+    background: #fafafa;
+}
+
 .dino {
     width: 60px;
     height: 60px;
-    background: green;
+    background-image: url(img/dino.png); /*em relação a o html*/
     position: absolute;
     bottom: 0px; /**usando o 10% ele não fica colado na parte de  baixo */
+
 }
 
 .cactus {
@@ -11,5 +16,31 @@
     width: 60px;
     height: 60px;
     bottom: 0;
-    background: red;
+    background: url(img/cactus.png);
+}
+
+.gameover {
+    text-align: center;
+    color: #666666;
+    margin-top: 50px;
+    font-family: Arial;
+}
+
+@keyframes slideright { /*animação de fundo*/
+    from{
+        background-position: 70000%;
+    }   
+    to {
+        background-position: 0;
+    }
+}
+
+.background { /*animação de fundo*/
+    position: absolute;
+    bottom: 0;
+    background-image: url(img/background.png);
+    background-repeat: repeat-x; /* infinitamente no eixo x*/
+    animation:  slideright 600s infinite linear;
+    width: 100%;
+    height: 200px;
 }
