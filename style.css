@@ -3,5 +3,13 @@
     height: 60px;
     background: green;
     position: absolute;
-    bottom: 0px; /**usando o 10% ele não fica colado na parte de  baixo/
+    bottom: 0px; /**usando o 10% ele não fica colado na parte de  baixo */
+}
+
+.cactus {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    bottom: 0;
+    background: red;
 }
